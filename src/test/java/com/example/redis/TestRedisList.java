@@ -77,6 +77,9 @@ public class TestRedisList {
     public void testRpopLpush() {
         //测试 rpoplpush source destination
         ListOperations<String, String> list = template.opsForList();
-
+        printResult(list);
+        String s = list.rightPopAndLeftPush("languange", "language");
+        System.out.println("弹出的值: " + s);
+        printResult(list);
     }
 }
