@@ -9,4 +9,4 @@ spring:
         max-wait: -1    #最大等待阻塞时间
         max-idle: 10    #最大空闲连接
         min-idle: 0     #最小空闲时间
-    timeout: 1000       #连接超时时间
+    timeout: 10000000     #连接超时时间
